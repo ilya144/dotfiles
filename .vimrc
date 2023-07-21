@@ -1,3 +1,6 @@
+" add to the end of root .vimrc
+" source ~/dotfiles
+
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
