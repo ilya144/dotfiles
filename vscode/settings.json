@@ -15,6 +15,10 @@
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
 
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.indentSize": "tabSize",
+
   "javascript.preferences.quoteStyle": "single",
   "[typescript]": {
     "editor.tabSize": 4
@@ -66,4 +70,7 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.startupEditor": "newUntitledFile",
   "editor.linkedEditing": true,
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "security.workspace.trust.enabled": false
 }
