@@ -1,0 +1,6 @@
+Host github.com
+    User git
+    AddKeysToAgent yes
+    HostName github.com
+    IdentityFile ~/.ssh/rsa_keys/github
+

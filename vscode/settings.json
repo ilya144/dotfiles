@@ -1,0 +1,69 @@
+{
+  // https://www.digitalocean.com/community/tutorials/workflow-auto-eslinting
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  "javascript.preferences.quoteStyle": "single",
+  "[typescript]": {
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.tabSize": 4
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.tabSize": 2
+  },
+  "emmet.preferences": {
+    "output.inlineBreak": 1
+  },
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c"
+  },
+  
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.suggestSmartCommit": false,
+
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Default Dark+",
+  
+  "workbench.colorCustomizations": {
+    "[Default Dark+]": {
+      "terminal.ansiBlack": "#1E1E1E",
+      "terminal.ansiYellow": "#e5c07b"
+    },
+
+    "[Atom One Dark]": {
+      "terminal.ansiBlack": "#282C34",
+      "terminal.ansiYellow": "#e5c07b"
+    }
+  },
+
+  "editor.fontFamily": "Source Code Pro for Powerline",
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "terminal.integrated.fontSize": 16,
+
+
+  "update.enableWindowsBackgroundUpdates": false,
+  "editor.showDeprecated": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.linkedEditing": true,
+}
