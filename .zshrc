@@ -34,7 +34,8 @@ alias l="ls -lAh --color --group-directories-first"
 alias cb="xsel -ib"
 # for nodejs projects usage
 alias tree="tree -I node_modules -C"
-
+# mc wsl suppport
+alias mc="mc -u -X"
 
 git config --global alias.root 'rev-parse --show-toplevel'
 git config --global user.name "ilya144"
