@@ -1,0 +1,22 @@
+{
+  // // Require .prettierrc
+  // "prettier.requireConfig": true,
+
+  "eslint.format.enable": true,
+  "eslint.autoFixOnSave": true,
+
+  "coc.preferences.rootPatterns": [
+    ".git", "package.json", "tsconfig.json", ".eslintrc"
+  ]
+
+  // // Run prettier (and others)
+  // "coc.preferences.formatOnSaveFiletypes": [
+  //   "css",
+  //   "markdown",
+  //   "Markdown",
+  //   "javascript",
+  //   "javascriptreact",
+  //   "typescript",
+  //   "typescriptreact"
+  // ]
+}
