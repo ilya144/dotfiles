@@ -16,7 +16,7 @@ dbld (){
 	docker build -t ${PWD##*/} --file ./Dockerfile .
 }
 
-jstots (){
+js2ts (){
 	for f in *.js; do
     		mv -- "$f" "${f%.js}.ts"
 	done
