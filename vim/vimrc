@@ -49,7 +49,7 @@ set laststatus=2
 set noshowmode
 
 " nerdtree setup
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0 "press shift+i for toggle mode"
 
 let mapleader=","
 
@@ -130,15 +130,17 @@ endfunction
 "set statusline+=\ %l:%c
 "set statusline+=\
 
+function! IsVBlock()
+    return mode()==''
+endfunction
+
 set statusline=
 set statusline+=%#DiffAdd#%{(mode()=='n')?'\ \ NORMAL\ ':''}
 set statusline+=%#DiffChange#%{(mode()=='i')?'\ \ INSERT\ ':''}
-set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
+set statusline+=%#DiffDelete#%{(mode()=='R')?'\ \ REPLACE\ ':''}
 set statusline+=%#Cursor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=\ %n\           " buffer number
-set statusline+=%#Visual#       " colour
-set statusline+=%{&paste?'\ PASTE\ ':''}
-set statusline+=%{&spell?'\ SPELL\ ':''}
+set statusline+=%#Cursor#%{(mode()=='V')?'\ \ V·LINE\ ':''}
+set statusline+=%#Cursor#%{IsVBlock()?'\ \ V·BLOCK\ ':''}
 set statusline+=%#CursorIM#     " colour
 set statusline+=%R                        " readonly flag
 set statusline+=%M                        " modified [+] flag
@@ -148,6 +150,7 @@ set statusline+=\ %t\                   " short file name
 set statusline+=%=                          " right align
 set statusline+=%#CursorLine#   " colour
 set statusline+=\ %Y\                   " file type
+set statusline+=\[\ %{&fileencoding?&fileencoding:&encoding}%{'\ '}]
 set statusline+=%#CursorIM#     " colour
 set statusline+=\ %3l:%-2c\         " line + column
 set statusline+=%#Cursor#       " colour
