@@ -32,6 +32,8 @@ call plug#begin('~/.vim/plugged')
   " gc - selected lines, gcc - line beneath cursor
   Plug 'tpope/vim-commentary'
 
+  Plug 'styled-components/vim-styled-components'
+
   let g:coc_disable_startup_warning = 1
 call plug#end()
 
@@ -96,6 +98,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-json', 
+  \ 'coc-styled-components', 
   \ ]
 
 " eslint setup

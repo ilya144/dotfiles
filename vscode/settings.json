@@ -4,6 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "files.insertFinalNewline": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
