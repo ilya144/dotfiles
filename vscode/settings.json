@@ -73,5 +73,7 @@
   "editor.linkedEditing": true,
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.gpuAcceleration": "on",
-  "security.workspace.trust.enabled": false
+  "security.workspace.trust.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "none"
 }
