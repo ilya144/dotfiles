@@ -91,6 +91,13 @@ nnoremap J :m .+1<CR>==
 vnoremap K :m '<-2<CR>gv=gv
 vnoremap J :m '>+1<CR>gv=gv
 
+" copy paste mappings
+set clipboard=unnamedplus
+" could also work with set clipboard=unnamed
+inoremap <C-v> <ESC>"+pa "  "*pa
+vnoremap <C-c> "+y "        "*y
+vnoremap <C-d> "+d "        "*d
+
 " coc extensions
 let g:coc_global_extensions = [
   \ 'coc-snippets',
