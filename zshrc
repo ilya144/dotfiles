@@ -38,6 +38,11 @@ alias tree="tree -I node_modules -C"
 # mc wsl suppport
 alias mc="mc -u -X"
 
+# less tree
+ltree (){
+    tree $1 | bat --file-name $1
+}
+
 # react component initialization
 init-component (){
     touch index.tsx styles.ts types.ts ${PWD##*/}.spec.tsx ${PWD##*/}.stories.tsx
