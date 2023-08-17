@@ -29,6 +29,7 @@ gcog (){
 alias cht="curl cht.sh"
 
 alias l="ls -lAh --color --group-directories-first"
+alias ls="ls --color=always"
 
 # cat some-file | cb; and use it in X application
 alias cb="xsel -ib"
@@ -36,6 +37,13 @@ alias cb="xsel -ib"
 alias tree="tree -I node_modules -C"
 # mc wsl suppport
 alias mc="mc -u -X"
+
+# react component initialization
+init-component (){
+    touch index.tsx styles.ts types.ts ${PWD##*/}.spec.tsx ${PWD##*/}.stories.tsx
+}
+
+alias curdir="echo ${PWD##*/}"
 
 git config --global alias.root 'rev-parse --show-toplevel'
 git config --global user.name "ilya144"
