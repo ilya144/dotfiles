@@ -15,6 +15,9 @@ call plug#begin('~/.vim/plugged')
   " Left side directory tree like VS Code
   Plug 'preservim/nerdtree'
 
+  " NERDTree for all tabs
+  Plug 'jistr/vim-nerdtree-tabs'
+
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "git nerd icons
   Plug 'ryanoasis/vim-devicons' " nerd icons
@@ -56,8 +59,11 @@ let NERDTreeShowHidden=0 "press shift+i for toggle mode"
 let mapleader=","
 
 "nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+" 
+" nnoremap <leader>t :NERDTreeToggle<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
+noremap <leader>t :NERDTreeTabsToggle<CR>
+noremap <C-t> :NERDTreeTabsToggle<CR>
 " nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <leader>n :tabnew<CR>
 nnoremap <leader>h :tabprevious<CR>
@@ -93,10 +99,14 @@ vnoremap J :m '>+1<CR>gv=gv
 
 " copy paste mappings
 set clipboard=unnamedplus
-" could also work with set clipboard=unnamed
-inoremap <C-v> <ESC>"+pa "  "*pa
-vnoremap <C-c> "+y "        "*y
-vnoremap <C-d> "+d "        "*d
+inoremap <C-v> <ESC>"+pa
+vnoremap <C-c> "+y
+vnoremap <C-d> "+d
+"!!!! if not work try these variant below !!!!
+" set clipboard=unnamed
+" inoremap <C-v> <ESC>"*pa
+" vnoremap <C-c> "*y
+" vnoremap <C-d> "*d
 
 " coc extensions
 let g:coc_global_extensions = [
