@@ -2,7 +2,7 @@
   // https://www.digitalocean.com/community/tutorials/workflow-auto-eslinting
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "files.insertFinalNewline": true,
   "eslint.validate": [
@@ -45,8 +45,6 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.suggestSmartCommit": false,
-
-  "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Dark+",
   
   "workbench.colorCustomizations": {
@@ -65,7 +63,8 @@
   "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
   "terminal.integrated.fontSize": 16,
 
-
+  "workbench.tree.enableStickyScroll": false,
+  "editor.stickyScroll.enabled": false,
   "update.enableWindowsBackgroundUpdates": false,
   "editor.showDeprecated": false,
   "liveServer.settings.donotShowInfoMsg": true,
@@ -74,6 +73,15 @@
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.gpuAcceleration": "on",
   "security.workspace.trust.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
   "telemetry.telemetryLevel": "off",
-  "update.mode": "none"
+  "update.mode": "none",
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true
+  },
+  "codestream.serverUrl": "https://codestream-us1.service.newrelic.com",
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "typescript.updateImportsOnFileMove.enabled": "never"
 }
